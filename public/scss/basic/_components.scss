@@ -1,0 +1,80 @@
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font;
+}
+h1 {
+  font-size: 125px;
+}
+h2 {
+  font-size: 100px;
+}
+h1,
+h2 {
+  color: $main-color;
+}
+h3 {
+  font-size: 75px;
+}
+h4 {
+  font-size: 42px;
+}
+h3,
+h4 {
+  color: $backround-color;
+}
+p {
+  margin-bottom: 50px;
+}
+.light {
+  color: $light;
+}
+.btn {
+  @include btn;
+}
+.small {
+  padding: 22px 36px;
+}
+.large {
+  padding: 22px 74px;
+}
+.logo {
+  color: $light;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav_link {
+  margin-left: 70px;
+  color: $light;
+}
+.header__nav {
+  position: relative;
+}
+.search_wrapper {
+  transition: 0.3s ease-in;
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.647);
+  @include flex-center;
+}
+.search_bar {
+  height: 60px;
+  width: 600px;
+  border-radius: 20px;
+  padding: 5px 30px;
+  font-size: 20px;
+}
+.show_form {
+  z-index: 1;
+}
+.search {
+  cursor: pointer;
+  float: right;
+  margin-left: 60px;
+}

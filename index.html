@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <title>Food</title>
+  </head>
+  <body>
+    <div class="search_wrapper" id="search_form">
+      <input
+        onclick="change()"
+        type="search"
+        class="search_bar"
+        placeholder="search something"
+      />
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header__logo">
+            <a href="#" class="logo">Your logo</a>
+          </div>
+          <nav class="header__nav" id="menu">
+            <a href="#" class="nav_link" onclick="hide()">Home</a>
+            <a href="#" class="nav_link" onclick="hide()">Product</a>
+            <a href="#" class="nav_link" onclick="hide()">Promo</a>
+            <a href="#" class="nav_link" onclick="hide()">About</a>
+            <a href="#" class="nav_link" onclick="hide()">Contact</a>
+            <div class="search" onclick="change()">
+              <img
+                class="search_icon"
+                src="./public/icons/search_icon.svg"
+                alt=""
+              />
+            </div>
+          </nav>
+          <div class="burger" onclick="toogle()">
+            <img src="./public/icons/burger.svg" alt="menu-burger" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero h-100">
+      <div class="container">
+        <div class="content_wrapper">
+          <div class="content">
+            <h1>Title Here</h1>
+            <p class="light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="btn">order now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="container">
+        <div class="cards_wrapper">
+          <div class="title_wrapper">
+            <h3>Best Seller</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+          <div class="content_cards">
+            <div class="content_card">
+              <img src="./public/images/1.png" alt="" class="circle" />
+              <h4>Title here</h4>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="content_card">
+              <img src="./public/images/2.png" alt="" class="circle" />
+              <h4>Title here</h4>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet<br />, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="content_card">
+              <img src="./public/images/3.png" alt="" class="circle" />
+              <h4>Title here</h4>
+              <p class="card_text">
+                Lorem ipsum dolor sit amet,<br />
+                consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="container">
+        <div class="section-3-wrapper"></div>
+      </div>
+    </section>
+    <script src="./public/javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@import "./colors";
+@import "./fonts";
+
+@mixin btn {
+  background-color: $main-color;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 25px;
+  color: $backround-color;
+  padding: 16px 56px;
+  text-transform: uppercase;
+}
+@mixin background-settings {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin flex {
+  display: flex;
+}
+@mixin flex-center {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-end {
+  @include flex;
+  align-items: center;
+  justify-content: flex-end;
+}
